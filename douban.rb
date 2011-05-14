@@ -3,7 +3,6 @@ require 'open-uri'
 require 'uri'
 require 'pp'
 require 'json'
-require 'addressable/uri'
 
 set :app_file, __FILE__
 
