@@ -17,4 +17,7 @@ configure :development do
   use Sinatra::Reloader
 end
 
+Dir.mkdir 'library' if not File.exist? 'library'
+Dir.mkdir 'library/tagged' if not File.exist? 'library/tagged'
+
 run Sinatra::Application
