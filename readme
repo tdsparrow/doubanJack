@@ -1,0 +1,18 @@
+Introducing
+===========
+
+This is a small proxy dedicated for douban.fm (a chinese music streaming site) which will save all streamed mp3 file and fill it
+with the id3 tags.
+
+
+How to use 
+==========
+
+1. rackup -s thin
+	This will start a mini proxy sever, then point your proxy for douban.com/douban.fm to this proxy.
+	The default webrick sever won't accept douban playlist url
+
+2. ruby tag.rb
+	Fill up all id3 tags in mp3 files and copy it to 'library/tagged'
+
+
