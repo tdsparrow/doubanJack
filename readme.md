@@ -9,6 +9,7 @@ How to use
 ==========
 
 `rackup -s thin`
+
 >This will start a mini proxy sever, then point your proxy for url including douban.com/douban.fm to this proxy. Note, douban moved one mp3 sever to a node without douban domain, you need match the whole url with 
 >The default webrick sever won't accept douban playlist url because of the buggy uri parse in ruby standard library.
 	
