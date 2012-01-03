@@ -17,7 +17,8 @@ configure :development do
   use Sinatra::Reloader
 end
 
-Dir.mkdir 'library' if not File.exist? 'library'
-Dir.mkdir 'library/tagged' if not File.exist? 'library/tagged'
+%w{ library library/.meta }.each do |dir|
+    Dir.mkdir dir if not File.exist? dir
+end
 
 run Sinatra::Application
