@@ -4,7 +4,6 @@ require 'uri'
 require 'pp'
 require 'json'
 require 'id3lib'
-require 'iconv'
 
 set :app_file, __FILE__
 
@@ -57,7 +56,7 @@ end
 
 
 def conv str
-  Iconv.conv("gb18030", "UTF-8", str)
+  str.encode("gb18030", "UTF-8")
 end
 
 def fillUpTags(file)
