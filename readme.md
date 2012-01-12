@@ -13,19 +13,19 @@ Install id3lib
 
 * Ubuntu
 
-  `sudo apt-get install libid3-toos libid3-<version>-dev`
+       `sudo apt-get install libid3-toos libid3-<version>-dev`
 
 * Other linux distribution
 
-  install using its own package managment system
+       install using its own package managment system
 
 * Mac
 
-  `sudo port install id3lib`
+       `sudo port install id3lib`
 
 * Windows
 
-  good luck
+       good luck
 
 Intall all dependencies
 -------------------------
