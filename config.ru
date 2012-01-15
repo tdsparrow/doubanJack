@@ -13,7 +13,7 @@ configure :development do
       super
     end
   end
-  
+
   use Sinatra::Reloader
 end
 
